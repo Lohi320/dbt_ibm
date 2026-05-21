@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: int_customers
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+  - name: int_orders
+    columns:
+      - name: status_code
+        description: order_status
+  - name: int_part_supp_stats
+    columns:
+      - name: inventory_value_usd
+        description: 'Inventory value in USD'
+      - name: unit_margin
+      - name: margin_percent
+      - name: inventory_level
+      - name: supplier_financial_health
+      - name: supplier_data_status
+      - name: normal_margin_status
+      - name: inventory_value_eur
+        description: values in currency euro
