@@ -1,0 +1,3 @@
+SELECT *
+FROM {{ ref('int_part_supp_stats') }}
+WHERE ROUND(INVENTORY_VALUE_USD * 0.86,2) != ROUND(INVENTORY_VALUE_EUR, 2)
